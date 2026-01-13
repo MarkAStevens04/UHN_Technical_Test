@@ -1,3 +1,19 @@
+# Setup
+### Option 1: Google Colab
+Visit the link [HERE](https://colab.research.google.com/drive/1b4-ThzX9yowckrTCJwByS3hHbVdBGuR8?usp=sharing) and make a copy. The Notebook will walk you through code execution.
+
+https://colab.research.google.com/drive/1b4-ThzX9yowckrTCJwByS3hHbVdBGuR8?usp=sharing 
+
+### Option 2: Download ipynb notebook and run
+Download the `UHN_Technical_Test_Mark_Stevens.ipynb` notebook. Open in a service like Google Colab or Jupyter. 
+
+### NOTE:
+- If you want to save the dataset on your Google Drive so you don't have to constantly redownload, you will need at least 11GB of space on your Drive.
+- If you would like to train the full model, you will need a GPU with at least 80GB of VRAM. This model was trained on an A100 with Colab Pro. You can, however, chose smaller models (change `MODEL_NAME = "InstaDeepAI/nucleotide-transformer-v2-50m-multi-species`), choose a smaller dataset (Set `NUM_RECORDS=10000`), or decrease the sequence length (set `SEQ_LEN=512`).
+
+
+---
+
 # Genomic Foundation Model Interpretability (ClinVar + NTv2 + Sparse Autoencoder)
 
 This repo contains a small, reproducible pipeline to:
@@ -22,13 +38,6 @@ This repo contains a small, reproducible pipeline to:
 
 - In the "Releases", see `Model Training` to download a zip file with the models I previously trained, and run inference on them. You will need to unpack the zip file, and import it into your google drive in `uhn_models/model_4`. From there, you will be able to run inference on the previously trained models.
 ---
-
-## Setup (Google Colab recommended)
-Visit the link [HERE](https://colab.research.google.com/drive/1b4-ThzX9yowckrTCJwByS3hHbVdBGuR8?usp=sharing) https://colab.research.google.com/drive/1b4-ThzX9yowckrTCJwByS3hHbVdBGuR8?usp=sharing and make a copy. The Notebook will walk you through how to execute the code.
-
-### NOTE:
-- If you want to save the dataset on your Google Drive so you don't have to constantly redownload, you will need at least 11GB of space on your Drive.
-- If you would like to train the full model, you will need a GPU with at least 80GB of VRAM. This model was trained on an A100 with Colab Pro. You can, however, chose smaller models (change `MODEL_NAME = "InstaDeepAI/nucleotide-transformer-v2-50m-multi-species`), choose a smaller dataset (Set `NUM_RECORDS=10000`), or decrease the sequence length (set `SEQ_LEN=512`).
 
 # Author
 - Mark Stevens
