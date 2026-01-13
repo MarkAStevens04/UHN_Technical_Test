@@ -9,7 +9,11 @@ Download the `UHN_Technical_Test_Mark_Stevens.ipynb` notebook. Open in a service
 
 ### NOTE:
 - **Saving datasets**: If you want to save the dataset on your Google Drive so you don't have to constantly redownload, you will need at least 11GB of space on your Drive.
-- **Training your own models**: If you would like to train the full model, you will need a GPU with at least 70GB of VRAM. This model was trained on an A100 with Colab Pro. You can, however, chose smaller models (change `MODEL_NAME = "InstaDeepAI/nucleotide-transformer-v2-50m-multi-species`), choose a smaller dataset (Set `NUM_RECORDS=10000`), or decrease the sequence length (set `SEQ_LEN=512`).
+- **Training your own models**: If you would like to train the full model, you will need a GPU with at least 70GB of VRAM. This model was trained on an A100 with Colab Pro. You can also make the following changes to attempt running on a GPU with less VRAM:
+  - **Smaller Model**: `MODEL_NAME = "InstaDeepAI/nucleotide-transformer-v2-50m-multi-species`
+  - **Smaller Sequence**: `SEQ_LEN=512`
+  - **Smaller Dataset**: `NUM_RECORDS=10000`
+
 
 
 ---
